@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03flex布局父项-04子项属性</title>
+    <link rel="stylesheet" href="../css/all_border.css">
+</head>
+<body>
+<div class="div1">
+    <h2>常见父项属性</h2>
+    <ul>
+        <li>flex-direction:设置主轴的方向</li>
+        <li>justify-content:设置主轴上的子元素排列方式</li>
+        <li>flex-wrap:设置子元素是否换行</li>
+        <li>align-content:设置侧轴上的子元素的排列方式(多行)</li>
+        <li>align-items:设置侧轴上的子元素排列方式(单行)</li>
+        <li>flex-flow:复合属性，相当于同时设置了flex-direction和flex-wrap</li>
+    </ul>
+    <div class="div2">
+        <dl>
+            <dt>flex-direction:设置主轴的方向</dt>
+            <div class="div3">
+                <h4>1、主轴与侧轴</h4>
+                <dd>
+                    <p>在flex布局中，是分为主轴和侧轴（行和列、x轴和y轴）两个方向</p>
+                    <ul>
+                        <li>默认主轴方向为x轴方向，水平向右</li>
+                        <li>默认侧轴方向为y轴方向，水平向下</li>
+                    </ul>
+                    <a href="./03_01flex-direction主轴方向.html" target="_blank">
+                        <img src="../img/03_cut_example01.png" alt="主轴与侧轴" title="主轴与侧轴">
+                    </a>
+                </dd>
+            </div>
+            <div class="div3">
+                <h4>2、属性值</h4>
+                <dd>
+                    <p>flex-direction属性决定主轴的方向（即项目的排列方向）</p>
+                    <p><strong>注意：</strong>主轴和侧轴是会变化的，就看flex-direction设置谁为主轴，剩下的就是侧轴。而我们的子元素是跟着主轴来排列的</p>
+                    <a href="./03_01flex-direction主轴方向.html" target="_blank">
+                        <img src="../img/03_cut_example02.png" alt="属性值" title="属性值">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+    <div class="div2">
+        <dl>
+            <dt>justify-content设置主轴上的子元素排列方式</dt>
+            <div class="div3">
+                <dd>
+                    <p>justify-content属性定义了项目在主轴上的对齐方式</p>
+                    <p><strong>注意：使用这个属性值前一定要确定好主轴是哪个</strong></p>
+                    <a href="./03_02justify-content主轴上子元素排列方式.html" target="_blank">
+                        <img src="../img/03_cut_example03.png" alt="主轴上项目对齐方式" title="主轴上项目对齐方式">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+    <div class="div2">
+        <dl>
+            <dt>flex-wrap设置子元素是否换行</dt>
+            <div class="div3">
+                <dd>
+                    <p>默认情况下，项目都在一条线（又称“轴线”）上，flex-wrap属性定义，flex布局中默认是不换行的。</p>
+                    <a href="./03_03flex-wrap子元素是否换行.html" target="_blank">
+                        <img src="../img/03_cut_example04.png" alt="子元素是否换行" title="子元素是否换行">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+
+    <div class="div2">
+        <dl>
+            <dt>align-items设置侧轴上的子元素排列方式（单行）</dt>
+            <div class="div3">
+                <dd>
+                    <p>该属性是控制子项在侧轴（默认是y轴）上的排列方式，在子项为单项的时候使用。</p>
+                    <a href="./03_04align-items侧轴上子元素排列方式（单行）.html" target="_blank">
+                        <img src="../img/03_cut_example05.png" alt="侧轴上的子元素排列方式（单行）" title="侧轴上的子元素排列方式（单行）">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+    <div class="div2">
+        <dl>
+            <dt>align-content设置侧轴上的子元素排列方式（多行）</dt>
+            <div class="div3">
+                <dd>
+                    <p>设置子项在侧轴上的排列方式并且只能用于子项出现<strong>换行</strong>的情况（多行），在单行下是没有效果的。</p>
+                    <p>单行找align-items多行找align-content</p>
+                    <a href="./03_05align-content侧轴上子元素排列方式（多行）.html" target="_blank">
+                        <img src="../img/03_cut_example06.png" alt="侧轴上的子元素排列方式（多行）" title="侧轴上的子元素排列方式（多行）">
+                    </a>
+                    <img src="../img//03_cut_example07.png" alt="单行找align-items多行找align-content" title="单行找align-items多行找align-content">
+                </dd>
+            </div>
+        </dl>
+    </div>  
+    <div class="div2">
+        <dl>
+            <dt>flex-flow复合属性</dt>
+            <div class="div3">
+                <dd>
+                    <p>设置子项在侧轴上的排列方式并且只能用于子项出现<strong>换行</strong>的情况（多行），在单行下是没有效果的。</p>
+                    <p>单行找align-items多行找align-content</p>
+                    <a href="./03_06flex-flow复合属性direction+wrap.html" target="_blank">
+                        <img src="../img/03_cut_example08.png" alt="侧轴上的子元素排列方式（多行）" title="侧轴上的子元素排列方式（多行）">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+    
+</div>
+<div class="div1">
+    <h2>常见子项属性</h2>
+    <ul>
+        <li>flex子项目占的份数</li>
+        <li>align-self控制子项自己在侧轴的排列方式</li>
+        <li>order属性定义子项的排列顺序（前后顺序）</li>
+    </ul>
+    <div class="div2">
+        <dl>
+            <dt>flex属性</dt>
+            <div class="div3">
+                <dd>
+                    <p>flex属性定义子项目分配剩余空间，用flex来表示占多少<strong>份数</strong>。</p>
+                    <a href="./04_01flex属性.html" target="_blank">
+                        <img src="../img/03_cut_example09.png" alt="flex分配剩余空间" title="flex分配剩余空间">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+    <div class="div2">
+        <dl>
+            <dt>align-self控制子项自己在侧轴的排列方式</dt>
+            <div class="div3">
+                <dd>
+                    <p>align-self属性允许单个项目有与其他项目不一样的对齐方式，可覆盖align-items属性。默认值是auto，表示继承父元素的align-item属性，如果没有父元素，则等同于stretch。</p>
+                    <a href="./04_02align-self控制子项自己在侧轴的排列方式.html" target="_blank">
+                        <img src="../img/03_cut_example10.png" alt="子项自己在侧轴的排列方式" title="子项自己在侧轴的排列方式">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+    <div class="div2">
+        <dl>
+            <dt>order属性定义子项的排列顺序</dt>
+            <div class="div3">
+                <dd>
+                    <p>数值越小，排列越靠前，默认为0。</p>
+                    <p><strong>注意：</strong>和z-index不一样。</p>
+                    <a href="./04_03order定义子项排列顺序.html" target="_blank">
+                        <img src="../img/03_cut_example11.png" alt="定义子项的排列顺序" title="定义子项的排列顺序">
+                    </a>
+                </dd>
+            </div>
+        </dl>
+    </div>
+    
+</div>
+</body>
+</html>

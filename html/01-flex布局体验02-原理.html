@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01-flex布局体验02-原理</title>
+    <style>
+        div{
+            display: flex;      /*指定div父级为flex布局*/
+            width: 80%;
+            height: 300px;
+            background-color: pink;
+            justify-content: space-around;
+        }
+        div span{
+            /* width: 150px; */
+            height: 100px;
+            background-color: purple;
+            margin-right: 5px;
+            flex: 1;        /* 宽度平均分为n等份 */
+            color: white;
+        }
+        body{
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>1、flex布局原理：就是通过给父盒子（flex容器）添加flex属性，来控制子盒子（flex项目）的位置和排列方式</span>
+    <span>2、子容器可以横向排列也可以纵向排列</span>
+    <span>3、flex容器的所有子元素自动成为容器成员，且子元素的float、clear和vertical-align属性将失效</span>
+    <span>4、伸缩布局 = 弹性布局 = 伸缩盒布局 = 弹性盒布局 =flex布局</span>
+</div>
+</body>
+</html>

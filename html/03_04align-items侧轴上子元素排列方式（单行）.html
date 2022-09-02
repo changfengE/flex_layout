@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>03_04align-items侧轴上子元素排列方式（单行）</title>
+    <style>
+        div{
+            display: flex;      /*指定div父级为flex布局*/
+            width: 800px;
+            height: 400px;
+            background-color: pink;
+            /* 默认的主轴是x轴 行 row */ 
+            /* 4、我们需要一个侧轴居中*/
+            justify-content: center;
+            align-items: center;/*其他值：flex-start、flex-end、center、stretch(使用时子元素需要去除高度)*/
+        }        
+        div span{
+            width: 150px;
+            height: 100px;
+            background-color: purple;
+            color: #fff;
+            margin: 10px;
+        }
+        body{
+            font-size: 10px;
+        }
+    </style>
+</head>
+<body>
+<div>
+    <span>1、flex-start:默认值，从上到下</span>
+    <span>2、flex-end:从下到上</span>
+    <span>3、center:挤在一起居中（垂直居中）</span>
+    <span>4、stretch:拉伸</span>
+</div>
+</body>
+</html>
